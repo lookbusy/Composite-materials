@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Рекомендация соотношения</title>
+	<style>
+	   .layer1 {
+		background-color: #D36037; /* Цвет фона */
+		text-align: center;
+	   }
+	   .layer2 {
+	   	margin-top: 3%; /* Отступ слева */
+		margin-left: 30%; /* Отступ слева */
+		margin-right: 30%; /* Отступ слева */
+		background-color: #ccc; /* Цвет фона */
+		padding: 20px; /* Поля вокруг текста */
+		border: 2px solid black; /* Параметры рамки */
+	   }
+  	</style>
+</head>
+<body>
+
+ </body>
+	<div class="layer1">
+		<h2>Соотношение матрица - наполнитель</h2>
+		    {% if message %}
+        	<h3>Рекомедовано:{{ message }}</h3>
+    		{% endif %}
+	</div>
+
+<body>
+	<form action="" method="post">
+		<div class="layer2">
+			<h3>Введите данные</h3>
+
+			<p>
+			<input type="float" name="param4">
+			<label for="param4">Плотность, кг/м3</label>
+			</p>
+
+			<p>
+			<input type="float" name="param5">
+			<label for="param5">Модуль упругости, ГПа</label>
+			</p>
+
+			<p>
+			<input type="float" name="param6">
+			<label for="param6">Количество отвердителя, м.%</label>
+			</p>
+
+			<p>
+			<input type="float" name="param7">
+			<label for="param7">Содержание эпоксидных групп,%_2</label>
+			</p>
+
+			<p>
+			<input type="float" name="param8">
+			<label for="param8">Температура вспышки, С_2</label>
+			</p>
+
+			<p>
+			<input type="float" name="param9">
+			<label for="param9">Поверхностная плотность, г/м2</label>
+			</p>
+
+			<p>
+			<input type="float" name="param10">
+			<label for="param10">Модуль упругости при растяжении, ГПа</label>
+			</p>
+
+			<p>
+			<input type="float" name="param11">
+			<label for="param11">Прочность при растяжении, МПа</label>
+			</p>
+
+			<p>
+			<input type="float" name="param12">
+			<label for="param12">Потребление смолы, г/м2</label>
+			</p>
+
+			<p>
+			<input type="float" name="param1">
+			<label for="param1">Угол нашивки, град</label>
+			</p>
+
+			<p>
+			<input type="float" name="param2">
+			<label for="param2">Шаг нашивки</label>
+			</p>
+
+			<p>
+			<input type="float" name="param3">
+			<label for="param3">Плотность нашивки</label>
+			</p>
+
+			<p>
+				<input type="submit" value="Вычислить">
+			</p>
+
+		</div>
+	</form>
+</body>
+</html>
